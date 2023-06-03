@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import BgImage from "../../public/portfolio-bg.png";
+import Link from "next/link";
 
 const imageContainerStyles = {
   width: "1573px",
@@ -17,7 +18,8 @@ export default function Home() {
 
   return (
     <div className={container}>
-      <div>Some overlay things go in here</div>
+      <h1>Some overlay things go in here</h1>
+      <Link href="/">this is some link</Link>
 
       <div className={bgContainer} style={imageContainerStyles}>
         <Image

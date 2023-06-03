@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
             style={{
               backgroundBlendMode: "exclusion",
               zIndex: "150",
+              pointerEvents: "none",
             }}
           ></Image>
         </main>

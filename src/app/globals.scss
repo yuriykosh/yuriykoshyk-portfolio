@@ -2,62 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@layer base {
+  html,
+  body {
+    @apply max-w-full  overflow-hidden text-white/80;
+  }
 
-html,
-body {
-  max-width: 100vw;
-  overflow: hidden;
-  // z-index: -100;
+  body {
+    @apply flex flex-col justify-between gap-2 w-full max-w-full p-4 bg-black;
 
-  // background-color: #000000;
-  color: rgba(255, 255, 255, 0.8);
-}
+    min-height: 100svh;
+    height: 100svh;
+    max-height: 100svh;
+  }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 8px;
+  main {
+    @apply relative w-full max-w-full h-full max-h-full px-6 py-4 overflow-hidden bg-transparent rounded-3xl;
+    // border-radius: 32px;
+  }
 
-  width: 100%;
-  max-width: 100%;
-  padding: 16px 16px;
-  min-height: 100svh;
-  height: 100svh;
-  max-height: 100svh;
-
-  background-color: #000000;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.container {
-  height: 100%;
-  max-height: 100%;
-}
-
-main {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  padding: 24px 16px;
-  overflow: hidden;
-
-  background: transparent;
-  border-radius: 32px;
+  h1 {
+    @apply mb-2 text-3xl font-bold;
+  }
 }
