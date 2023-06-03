@@ -25,6 +25,7 @@ const Navbar = () => {
   const { container, navigation, link, logo, icon, contact } = styles;
 
   return (
+    // <div className={container}>
     <header className={container}>
       <nav>
         <ul className={navigation}>
@@ -40,6 +41,7 @@ const Navbar = () => {
       </Link>
       <button className={contact}>Contact</button>
     </header>
+    // </div>
   );
 };
 

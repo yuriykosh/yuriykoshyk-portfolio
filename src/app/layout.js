@@ -19,22 +19,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={fixel.className}>
-        <div className="container">
-          <Navbar />
-          <main>
-            {children}
-            <Image
-              src={NoiseEffect}
-              fill={true}
-              quality={100}
-              alt="noise effect overlay"
-              style={{
-                backgroundBlendMode: "exclusion",
-                zIndex: "150",
-              }}
-            ></Image>
-          </main>
-        </div>
+        {/* <div className="container"> */}
+        <Navbar />
+        <main>
+          {children}
+          <Image
+            src={NoiseEffect}
+            fill={true}
+            quality={100}
+            alt="noise effect overlay"
+            style={{
+              backgroundBlendMode: "exclusion",
+              zIndex: "150",
+            }}
+          ></Image>
+        </main>
+        {/* </div> */}
       </body>
     </html>
   );
