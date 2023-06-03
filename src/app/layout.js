@@ -18,11 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={fixel.className}>
-        {/* <div className="container"> */}
+      <body className={fixel.className} suppressHydrationWarning={true}>
         <Navbar />
         <main>
           {children}
+
           <Image
             src={NoiseEffect}
             fill={true}
@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
             }}
           ></Image>
         </main>
-        {/* </div> */}
       </body>
     </html>
   );
