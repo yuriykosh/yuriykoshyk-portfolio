@@ -1,0 +1,56 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 32px;
+  padding: 6px 0 5px;
+}
+
+.navigation {
+  display: flex;
+  gap: 48px;
+}
+
+.link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.85;
+  text-align: right;
+  letter-spacing: 0.007em;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.logo {
+  position: absolute;
+  width: 30px;
+  height: 26px;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  gap: 8px;
+
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+
+  border: 0.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 32px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.85;
+  text-align: right;
+  letter-spacing: 0.007em;
+
+  color: rgba(255, 255, 255, 0.65);
+}
