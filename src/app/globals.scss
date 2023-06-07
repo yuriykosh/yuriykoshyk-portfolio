@@ -9,7 +9,7 @@
   }
 
   body {
-    @apply flex flex-col justify-between gap-2 w-full max-w-full p-4 bg-black;
+    @apply flex flex-col justify-between gap-2 w-full max-w-full p-3 lg:p-4 bg-black;
 
     min-height: 100svh;
     height: 100svh;
@@ -17,11 +17,23 @@
   }
 
   main {
-    @apply relative w-full max-w-full h-full max-h-full px-6 py-4 overflow-hidden bg-transparent rounded-3xl;
+    @apply relative w-full max-w-full h-full max-h-full px-2 lg:px-4 py-4 lg:py-6 overflow-hidden bg-transparent rounded-3xl lg:rounded-4xl;
     // border-radius: 32px;
   }
 
   h1 {
-    @apply mb-2 text-3xl font-bold;
+    @apply text-h1XS xs:text-h1S md:text-h1L;
+  }
+  h2 {
+    @apply text-h2S md:text-h2L;
+  }
+  h3 {
+    @apply text-h3S md:text-h3L;
+  }
+  h4 {
+    @apply text-h4XS xs:text-h4S md:text-h4L;
+  }
+  p {
+    @apply text-bodyS md:text-bodyL;
   }
 }
