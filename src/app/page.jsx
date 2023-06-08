@@ -1,8 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.scss";
 import BgImage from "../../public/portfolio-bg.png";
 import Link from "next/link";
-import { DesignIcon } from "@/components/icons/designIcon/DesignIcon";
 import Category from "@/components/category/Category";
 
 const imageContainerStyles = {
@@ -19,7 +17,7 @@ export default function Home() {
         Yuriy
       </h1>
       <div className="flex flex-col w-3/5 gap-4 ml-auto">
-        <Category />
+        <Category color="text-[#EC683E]" />
 
         <Link href="/dev">
           <h4>

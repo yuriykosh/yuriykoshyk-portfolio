@@ -2,7 +2,7 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 
-const Category = () => {
+const Category = ({ color }) => {
   return (
     <Link
       href="/design"
@@ -11,7 +11,7 @@ const Category = () => {
       <h4>
         UX/UI <span className="block">Design</span>
       </h4>
-      <Icon icon="carbon:navaid-ndb" className="text-[#EC683E] text-4xl" />
+      <Icon icon="carbon:navaid-ndb" className={({ color }, "text-4xl")} />
     </Link>
   );
 };
