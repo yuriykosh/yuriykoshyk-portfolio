@@ -5,7 +5,7 @@ import SVGLOGO from "../../../public/logo.svg";
 import SVGBURGER from "../../../public/burger-icon.svg";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import Navoverlay from "../navoverlay/Navoverlay";
+import NavModal from "../navModal/NavModal";
 
 const links = [
   {
@@ -26,7 +26,7 @@ const links = [
 ];
 
 const Navbar = () => {
-  const [showNavoverlay, setShowNavoverlay] = useState(false);
+  const [showNavModal, setShowNavModal] = useState(false);
 
   return (
     <header className="relative pt-1.5 pb-[5px] px-0 lg:mx-8">
@@ -36,29 +36,28 @@ const Navbar = () => {
       </Link>
 
       {/* Burger Button */}
-      <div className="lg:hidden">
-        <button
-          className="w-[28px] h-[26px]"
-          onClick={() => setShowNavoverlay(!showNavoverlay)}
-        >
-          <Image src={SVGBURGER} alt="Burger menu" />
-        </button>
-      </div>
+      <button
+        className="w-[28px] h-[26px] lg:hidden"
+        onClick={() => setShowNavModal(!showNavModal)}
+      >
+        <Image src={SVGBURGER} alt="Burger menu" />
+      </button>
 
       {/* Mobile Navigation */}
-      <Navoverlay
-        links={links}
-        className={`absolute -left-3 -top-5 w-screen h-screen p-3 bg-black border border-red-600 z-50 lg:hidden ${
-          showNavoverlay ? "translate-x-0 " : "translate-x-full"
-        }`}
-      />
+      {showNavModal && (
+        <NavModal
+          links={links}
+          showNavModal={showNavModal}
+          closeNavModal={() => setShowNavModal(false)}
+        />
+      )}
 
       {/* Navigation */}
       <nav className="hidden lg:block">
         <ul className="flex gap-12">
           {links.map(({ id, title, url }) => (
-            <li>
-              <Link key={id} href={url} className="text-subtitle text-white/60">
+            <li key={id}>
+              <Link href={url} className="text-subtitle text-white/60">
                 {title}
               </Link>
             </li>

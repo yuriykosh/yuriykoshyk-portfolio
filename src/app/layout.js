@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
             alt="noise effect overlay"
             style={{
               backgroundBlendMode: "exclusion",
-              zIndex: "150",
+              zIndex: "40",
               pointerEvents: "none",
             }}
           ></Image>
