@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
-import Image from "next/image";
-import Navbar from "@/components/navbar/Navbar";
 import "./globals.scss";
-import NoiseEffect from "../../public/noise-effect.png";
+
+import Navbar from "@/components/Navbar";
+import NoisePicture from "@/utils/NoisePicture";
 
 const fixel = localFont({
   src: "../../public/fonts/fixel.ttf",
@@ -20,20 +20,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={fixel.className} suppressHydrationWarning={true}>
         <Navbar />
-        <main>
+        <main className="relative w-full h-full max-w-full max-h-full px-2 py-4 overflow-hidden bg-transparent lg:px-4 lg:py-6 rounded-3xl lg:rounded-4xl">
           {children}
 
-          <Image
-            src={NoiseEffect}
-            fill={true}
-            quality={100}
-            alt="noise effect overlay"
-            style={{
-              backgroundBlendMode: "exclusion",
-              zIndex: "40",
-              pointerEvents: "none",
-            }}
-          ></Image>
+          <NoisePicture />
         </main>
       </body>
     </html>

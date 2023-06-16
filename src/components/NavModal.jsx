@@ -2,11 +2,12 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import NavbarItem from "./NavbarItem";
 
-const NavModal = ({ links, showNavModal, closeNavModal }) => {
+const NavModal = ({ routes, showNavModal, closeNavModal }) => {
   return (
     <aside
-      className={`absolute -left-3 -top-5 w-screen h-screen p-3 bg-black border border-red-600 z-50 lg:hidden ${
+      className={`absolute -left-7 -top-2 w-screen h-screen p-3 bg-black border border-red-600 z-50 lg:hidden ${
         showNavModal ? "translate-x-0 " : "translate-x-full"
       }`}
     >
@@ -23,16 +24,13 @@ const NavModal = ({ links, showNavModal, closeNavModal }) => {
         {/* navigation */}
         <div className="flex flex-col items-center justify-center flex-grow gap-8">
           <ul className="flex flex-col items-center justify-center gap-8">
-            {links.map(({ id, title, url }) => (
-              <li key={id}>
-                <Link
-                  href={url}
-                  onClick={() => closeNavModal()}
-                  className="transition text-subtitle text-white/60 hover:text-white"
-                >
-                  <h3>{title}</h3>
-                </Link>
-              </li>
+            {routes.map((item) => (
+              <NavbarItem
+                key={item.id}
+                closeNavModal={closeNavModal}
+                className="transition text-h3S md:text-h3L "
+                {...item}
+              />
             ))}
           </ul>
           <button className="flex flex-row items-center justify-center gap-2 py-1 px-4 bg-transparent cursor-pointer border-[0.5px] border-white/40 rounded-4xl text-white/60 hover:text-white transition">
