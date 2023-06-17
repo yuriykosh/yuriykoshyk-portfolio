@@ -17,18 +17,18 @@
   }
 
   h1 {
-    @apply text-h1XS xs:text-h1S md:text-h1L;
+    @apply text-h1XS xs:text-h1S md:text-h1L 2xl:text-h1XL;
   }
   h2 {
-    @apply text-h2S md:text-h2L;
+    @apply text-h2S md:text-h2L 2xl:text-h2XL;
   }
   h3 {
-    @apply text-h3S md:text-h3L;
+    @apply text-h3S md:text-h3L 2xl:text-h3XL;
   }
   h4 {
-    @apply text-h4XS xs:text-h4S md:text-h4L;
+    @apply text-h4XS xs:text-h4S md:text-h4L 2xl:text-h4XL;
   }
   p {
-    @apply text-bodyS md:text-bodyL;
+    @apply text-bodyS md:text-bodyL 2xl:text-bodyXL;
   }
 }

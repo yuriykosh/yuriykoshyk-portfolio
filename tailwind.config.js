@@ -55,11 +55,27 @@ module.exports = {
             fontWeight: "400",
           },
         ],
+        bodyXL: [
+          "24px",
+          {
+            lineHeight: "34.5px",
+            letterSpacing: "0",
+            fontWeight: "400",
+          },
+        ],
         // SUBTITLE
         subtitle: [
           "12px",
           {
             lineHeight: "14px",
+            letterSpacing: "0.007em",
+            fontWeight: "400",
+          },
+        ],
+        subtitleXL: [
+          "16px",
+          {
+            lineHeight: "18px",
             letterSpacing: "0.007em",
             fontWeight: "400",
           },
@@ -89,6 +105,14 @@ module.exports = {
             fontWeight: "400",
           },
         ],
+        h4XL: [
+          "54px",
+          {
+            lineHeight: "63px",
+            letterSpacing: "-0.007em",
+            fontWeight: "400",
+          },
+        ],
         // H3
         h3S: [
           "36px",
@@ -106,6 +130,14 @@ module.exports = {
             fontWeight: "400",
           },
         ],
+        h3XL: [
+          "108px",
+          {
+            lineHeight: "108px",
+            letterSpacing: "-0.005em",
+            fontWeight: "400",
+          },
+        ],
         // H2
         h2S: [
           "48px",
@@ -119,6 +151,14 @@ module.exports = {
           "144px",
           {
             lineHeight: "144px",
+            letterSpacing: "-0.08em",
+            fontWeight: "400",
+          },
+        ],
+        h2XL: [
+          "216px",
+          {
+            lineHeight: "216px",
             letterSpacing: "-0.08em",
             fontWeight: "400",
           },
@@ -148,9 +188,20 @@ module.exports = {
             fontWeight: "700",
           },
         ],
+        h1XL: [
+          "330px",
+          {
+            lineHeight: "330px",
+            letterSpacing: "-0.075em",
+            fontWeight: "700",
+          },
+        ],
       },
       borderRadius: {
         "4xl": "2rem",
+      },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },

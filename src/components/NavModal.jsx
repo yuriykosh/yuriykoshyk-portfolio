@@ -28,7 +28,7 @@ const NavModal = ({ routes, showNavModal, closeNavModal }) => {
               <NavbarItem
                 key={item.id}
                 closeNavModal={closeNavModal}
-                className="transition text-h3S md:text-h3L "
+                className="transition text-h3S md:text-h3L 2xl:text-h3XL "
                 {...item}
               />
             ))}
