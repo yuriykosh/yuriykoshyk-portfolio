@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Icon } from "@iconify/react";
 import NavbarItem from "./NavbarItem";
 
-const NavModal = ({ routes, showNavModal, closeNavModal }) => {
+const NavModal = ({ routes, pathname, showNavModal, closeNavModal }) => {
   return (
     <aside
       className={`absolute -left-7 -top-2 w-screen h-screen p-3 bg-black border border-red-600 z-50 lg:hidden ${
@@ -12,7 +12,7 @@ const NavModal = ({ routes, showNavModal, closeNavModal }) => {
       }`}
     >
       {/* container */}
-      <div className="flex flex-col w-full h-full">
+      <div className="flex flex-col w-full h-full gap-36 md:gap-28">
         {/* close button */}
         <button
           onClick={() => closeNavModal()}
@@ -22,13 +22,17 @@ const NavModal = ({ routes, showNavModal, closeNavModal }) => {
         </button>
 
         {/* navigation */}
-        <div className="flex flex-col items-center justify-center flex-grow gap-8">
+        <div className="flex flex-col items-center justify-center gap-8">
           <ul className="flex flex-col items-center justify-center gap-8">
             {routes.map((item) => (
               <NavbarItem
                 key={item.id}
                 closeNavModal={closeNavModal}
-                className="transition text-h3S md:text-h3L 2xl:text-h3XL "
+                pathname={pathname}
+                color={
+                  item.category && item.category[0] && item.category[0].color
+                }
+                className="flex flex-col transition text-h3S md:text-h3L 2xl:text-h3XL"
                 {...item}
               />
             ))}

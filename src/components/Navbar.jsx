@@ -31,12 +31,14 @@ const Navbar = () => {
         {
           label: "UX/UI Design",
           href: "/portfolio/design",
-          color: "text-fox-500/60 hover:text-fox-500",
+          className:
+            "transition max-lg:text-center text-fox-500/60 hover:text-fox-500 focus:text-fox-500 active:text-fox-500 outline-offset-4",
         },
         {
           label: "Frontend Development",
           href: "/portfolio/dev",
-          color: "text-whale-500/60 hover:text-whale-500",
+          className:
+            "transition max-lg:text-center text-whale-500/60 hover:text-whale-500 focus:text-whale-500 active:text-whale-500 outline-offset-4",
         },
       ],
     },
@@ -75,6 +77,7 @@ const Navbar = () => {
       {showNavModal && (
         <NavModal
           routes={routes}
+          pathname={pathname}
           showNavModal={showNavModal}
           closeNavModal={() => setShowNavModal(false)}
         />
@@ -87,6 +90,9 @@ const Navbar = () => {
             <NavbarItem
               key={item.id}
               pathname={pathname}
+              color={
+                item.category && item.category[0] && item.category[0].color
+              }
               className="text-subtitle 2xl:text-subtitleXL"
               {...item}
             />
