@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <main className="relative w-full h-full max-w-full max-h-full px-2 py-4 overflow-hidden bg-transparent lg:px-4 lg:py-6 rounded-3xl lg:rounded-4xl">
           {children}
 
-          <NoisePicture />
+          {/* <NoisePicture /> */}
         </main>
       </body>
     </html>

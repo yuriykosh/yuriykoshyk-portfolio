@@ -28,6 +28,11 @@ const NavbarItem = ({
     }
   };
 
+  function handleLink() {
+    handleOpen;
+    closeNavModal;
+  }
+
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
@@ -63,7 +68,10 @@ const NavbarItem = ({
                   className="flex max-lg:justify-center max-lg:items-center max-lg:w-fit"
                 >
                   <Link
-                    onClick={(handleOpen, closeNavModal)}
+                    onClick={() => {
+                      closeNavModal();
+                      handleOpen;
+                    }}
                     href={href}
                     className={className}
                   >

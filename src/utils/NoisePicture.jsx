@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "/public/noise-effect.png";
+import image from "/public/noise-effect.webp";
 
 const NoisePicture = () => {
   return (

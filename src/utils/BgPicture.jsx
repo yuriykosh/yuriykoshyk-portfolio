@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import image from "/public/portfolio-bg.png";
+import image from "/public/picture-bg.webp";
 
 const BgPicture = ({ className }) => {
   return (
