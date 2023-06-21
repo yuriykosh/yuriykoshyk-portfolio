@@ -6,6 +6,7 @@ const NoisePicture = () => {
     <Image
       src={image}
       fill
+      sizes="24rem"
       quality={100}
       alt="noise effect overlay"
       className="z-40 pointer-events-none bg-blend-exclusion"

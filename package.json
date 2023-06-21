@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase-cache-helpers/postgrest-swr": "^1.0.17",
     "@supabase/supabase-js": "^2.26.0",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",

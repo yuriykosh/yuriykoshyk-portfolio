@@ -1,5 +1,7 @@
+import PortfolioList from "@/components/PortfolioList";
+
 const About = () => {
-  return <div>About</div>;
+  return <div>{/* <PortfolioList /> */}</div>;
 };
 
 export default About;
