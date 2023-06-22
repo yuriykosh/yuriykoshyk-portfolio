@@ -1,15 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 
-import { IconCategoryDesign, IconCategoryDev } from "@/utils/Icons";
 import BgPicture from "@/utils/BgPicture";
+import { IconCategoryDesign, IconCategoryDev } from "@/utils/Icons";
 import PortfolioList from "@/components/PortfolioList";
 import DesignTools from "@/components/DesignTools";
 import DesignSkills from "@/components/DesignSkills";
+import DevStack from "@/components/DevStack";
+import DevSkills from "@/components/DevSkills";
 
 const Category = () => {
   const pathname = usePathname();
@@ -44,13 +46,9 @@ const Category = () => {
 
   return (
     <div className="flex flex-col justify-between h-full xs:pb-10 lg:p-0">
-      {/* <div className="flex flex-col gap-4">
-        {category.map((item) => (
-          <CategoryItem key={item.id} {...item} />
-        ))}
-      </div> */}
-
       {pathname === "/portfolio/design" ? (
+        // * -------------- DESIGN PAGE -------------- *
+
         <div className="flex flex-col w-full h-full gap-4 xs:gap-8">
           {/* MAIN CONTENT */}
           <div className="flex overflow-hidden flex-col  grow xs:justify-between lg:relative lg:h-full pb-4 xs:pb-4 lg:pl-8 xl:pl-10 lg:pr-0 lg:py-4 border border-fox-500 rounded-4xl lg:rounded-[60px] backdrop-blur bg-black/25 transition">
@@ -115,17 +113,8 @@ const Category = () => {
           </div>
         </div>
       ) : (
-        // <>
-        //   <CategoryItem
-        //     id={devData.id}
-        //     headingStart={devData.headingStart}
-        //     headingEnd={devData.headingEnd}
-        //     icon={devData.icon}
-        //     href={devData.href}
-        //     color={devData.color}
-        //     classes={devData.classes}
-        //   />
-        // </>
+        // * -------------- DEV PAGE -------------- *
+
         <div className="flex flex-col w-full h-full gap-4 xs:gap-8">
           <div className="flex w-full gap-4 h-1/3 lg:h-full lg:gap-8">
             {/* ADDITIONAL INFO */}
@@ -134,9 +123,9 @@ const Category = () => {
                 <div className="flex justify-between xs:justify-start xs:gap-14">
                   <button onClick={() => setAdditionalInfo(!additionalInfo)}>
                     {additionalInfo ? (
-                      <h4 className="text-white/60">Tools</h4>
+                      <h4 className="text-white/60">Stack</h4>
                     ) : (
-                      <h4 className="text-white">Tools</h4>
+                      <h4 className="text-white">Stack</h4>
                     )}
                   </button>
                   <button
@@ -150,11 +139,11 @@ const Category = () => {
                     )}
                   </button>
                 </div>
-                {additionalInfo ? <DesignSkills /> : <DesignTools />}
+                {additionalInfo ? <DevSkills /> : <DevStack />}
               </div>
               <div className="hidden w-full h-full gap-3 lg:flex lg:flex-col xs:gap-4 xl:gap-6 lg:w-1/2">
                 <h4 className="text-white">Skills</h4>
-                <DesignSkills />
+                <DevSkills />
               </div>
             </div>
 
@@ -183,7 +172,7 @@ const Category = () => {
               <IconCategoryDev className="text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-whale-500 transition animate-spin-slow-5" />
             </div>
 
-            <div className="grow lg:w-5/6 lg:ml-auto">
+            <div className="grow lg:w-9/12 xl:5/6 lg:ml-auto">
               <PortfolioList />
             </div>
           </div>

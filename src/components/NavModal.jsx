@@ -1,18 +1,17 @@
 "use client";
-import Link from "next/link";
-import { useState } from "react";
+
 import { Icon } from "@iconify/react";
 import NavbarItem from "./NavbarItem";
 
 const NavModal = ({ routes, pathname, showNavModal, closeNavModal }) => {
   return (
     <aside
-      className={`absolute -left-7 -top-2 w-screen h-screen p-3 bg-black border border-red-600 z-50 lg:hidden ${
+      className={`absolute -left-7 -top-2 xs:-top-5 w-screen h-screen p-3 bg-black  z-[60] lg:hidden ${
         showNavModal ? "translate-x-0 " : "translate-x-full"
       }`}
     >
       {/* container */}
-      <div className="flex flex-col w-full h-full gap-36 md:gap-28">
+      <div className="flex flex-col w-full h-full gap-24 xs:gap-36 md:gap-28">
         {/* close button */}
         <button
           onClick={() => closeNavModal()}

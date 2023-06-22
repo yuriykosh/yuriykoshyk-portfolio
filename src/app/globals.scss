@@ -42,3 +42,17 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.text-shadow {
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba($color: #ffffff, $alpha: 0.8);
+  -webkit-text-fill-color: black;
+
+  &--active {
+    -webkit-text-stroke: 1px rgba($color: #ffffff, $alpha: 1);
+  }
+}
