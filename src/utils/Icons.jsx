@@ -260,3 +260,54 @@ export function IconClose(props) {
     </svg>
   );
 }
+
+export function IconArrowUpRight(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 32 32"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M10 6v2h12.59L6 24.59L7.41 26L24 9.41V22h2V6H10z"
+      ></path>
+    </svg>
+  );
+}
+
+export function IconArrowRight(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 32 32"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10L18 6z"
+      ></path>
+    </svg>
+  );
+}
+
+export function IconChevronDown(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 32 32"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M16 22L6 12l1.4-1.4l8.6 8.6l8.6-8.6L26 12z"
+      ></path>
+    </svg>
+  );
+}

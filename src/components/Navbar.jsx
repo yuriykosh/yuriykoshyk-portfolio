@@ -10,9 +10,12 @@ import logo from "/public/logo.svg";
 import burgerIcon from "/public/burger-icon.svg";
 import NavModal from "./NavModal";
 import NavbarItem from "./NavbarItem";
+import { IconArrowRight } from "@/utils/Icons";
+import ContactModal from "./ContactModal";
 
 const Navbar = () => {
   const [showNavModal, setShowNavModal] = useState(false);
+  const [showContactModal, setShowContactModal] = useState(false);
   const pathname = usePathname();
 
   const routes = [
@@ -93,16 +96,26 @@ const Navbar = () => {
               color={
                 item.category && item.category[0] && item.category[0].color
               }
-              className="text-subtitle 2xl:text-subtitleXL"
+              className="text-subtitle lg:text-subtitleL 2xl:text-subtitleXL"
               {...item}
             />
           ))}
         </ul>
       </nav>
 
-      <button className="hidden lg:flex flex-row items-center justify-center gap-2 py-0.5 px-1 bg-transparent cursor-pointer border-[0.5px] border-white/40 rounded-4xl text-subtitle 2xl:text-subtitleXL text-white/60 transition hover:text-white hover:border-white/60 focus:text-white focus:border-white/60 outline-offset-4 hover:cursor-pointer">
+      <button
+        onClick={() => setShowContactModal(!showContactModal)}
+        className="hidden group lg:flex flex-row items-center justify-center gap-2 py-0.5 px-1 duration-300 bg-transparent cursor-pointer border-[0.5px] border-white/40 rounded-4xl text-subtitle lg:text-subtitleL 2xl:text-subtitleXL text-white/60 transition hover:text-white hover:border-white/60 focus:text-white focus:border-white/60 outline-offset-4 hover:scale-105 focus:scale-105"
+      >
         Contact
+        <IconArrowRight className="hidden text-white transition duration-500 opacity-0 group-hover:block group-hover:opacity-100" />
       </button>
+
+      {showContactModal && (
+        <ContactModal
+          closeContactModal={() => setShowContactModal(!showContactModal)}
+        />
+      )}
     </header>
   );
 };

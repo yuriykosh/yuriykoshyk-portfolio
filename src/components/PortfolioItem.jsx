@@ -38,14 +38,14 @@ const PortfolioItem = ({ id, name, href, imageSrc, year }) => {
           {pathname === "/portfolio/design" ? (
             <ul className="absolute flex gap-1 left-4 bottom-4">
               <li className="flex items-center justify-center px-1 py-0.5  border border-fox-500/80 rounded-4xl backdrop-blur-sm">
-                <p className="text-fox-500 text-subtitle 2xl:text-subtitleXL">
+                <p className="text-fox-500 text-subtitle lg:text-subtitleL 2xl:text-subtitleXL">
                   {name}
                 </p>
               </li>
               <li className="flex items-center justify-center px-1 py-0.5 border border-fox-500/80 bg-fox-500/80 rounded-4xl">
                 <time
                   timedate={year}
-                  className="text-white text-subtitle 2xl:text-subtitleXL"
+                  className="text-white text-subtitle lg:text-subtitleL 2xl:text-subtitleXL"
                 >
                   {year}
                 </time>

@@ -40,9 +40,9 @@ module.exports = {
       fontSize: {
         // BODY
         bodyS: [
-          "7px",
+          "12px",
           {
-            lineHeight: "10px",
+            lineHeight: "16px",
             letterSpacing: "0",
             fontWeight: "400",
           },
@@ -68,6 +68,14 @@ module.exports = {
           "12px",
           {
             lineHeight: "14px",
+            letterSpacing: "0.007em",
+            fontWeight: "400",
+          },
+        ],
+        subtitleL: [
+          "14px",
+          {
+            lineHeight: "16px",
             letterSpacing: "0.007em",
             fontWeight: "400",
           },

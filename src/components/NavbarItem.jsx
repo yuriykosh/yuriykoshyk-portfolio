@@ -1,5 +1,6 @@
 "use client";
 
+import { IconChevronDown } from "@/utils/Icons";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
@@ -28,6 +29,10 @@ const NavbarItem = ({
     }
   };
 
+  const handleMouseLeave = () => {
+    setOpen(!open);
+  };
+
   function handleLink() {
     handleOpen;
     closeNavModal;
@@ -47,7 +52,7 @@ const NavbarItem = ({
           <button
             onClick={handleOpen}
             className={twMerge(
-              `relative  text-white/60 transition hover:text-white focus:text-white active:text-white outline-offset-4`,
+              `relative group text-white/60 transition hover:text-white focus:text-white active:text-white outline-offset-4`,
 
               // active && `${className} text-white`,
               pathname === "/portfolio/design"
@@ -59,9 +64,19 @@ const NavbarItem = ({
             )}
           >
             {label}
+            <IconChevronDown
+              className={
+                open
+                  ? "absolute translate-x-1 -translate-y-1/2 opacity-100 left-full top-1/2 transition rotate-180"
+                  : "hidden absolute translate-x-1 -translate-y-1/2 opacity-0 left-full top-1/2 transition rotate-0 group-hover:block group-hover:opacity-100 group-focus:block group-focus:opacity-100"
+              }
+            />
           </button>
           {open ? (
-            <ul className="flex flex-col max-lg:justify-center max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:mt-10 lg:absolute lg:z-10 lg:gap-1 lg:p-4 lg:-ml-4 lg:rounded-lg lg:bg-black/60">
+            <ul
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col max-lg:justify-center max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:mt-10 lg:absolute lg:z-10 lg:gap-1 lg:p-4 lg:-ml-4 lg:rounded-lg lg:bg-black/60"
+            >
               {category.map(({ label, href, className }) => (
                 <li
                   key={label}
