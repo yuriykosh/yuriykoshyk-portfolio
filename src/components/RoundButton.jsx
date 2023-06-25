@@ -7,7 +7,7 @@ const RoundButton = ({ children, className, action }) => {
     <button
       onClick={() => action()}
       className={twMerge(
-        `flex items-center justify-center p-2 border rounded-full`,
+        `flex items-center justify-center border rounded-full`,
         className
       )}
     >

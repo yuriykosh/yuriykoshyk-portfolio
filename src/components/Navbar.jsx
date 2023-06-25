@@ -83,6 +83,9 @@ const Navbar = () => {
           pathname={pathname}
           showNavModal={showNavModal}
           closeNavModal={() => setShowNavModal(false)}
+          showContactModal={showContactModal}
+          setShowContactModal={setShowContactModal}
+          closeContactModal={() => setShowContactModal(!showContactModal)}
         />
       )}
 
