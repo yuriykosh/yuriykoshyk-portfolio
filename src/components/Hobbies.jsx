@@ -14,29 +14,29 @@ const Hobbies = () => {
       <h2 className="text-white lg:ml-8">My Hobbies</h2>
       <div className="flex flex-col gap-6 lg:w-[90%] lg:ml-8 ">
         <p className="pb-6 text-subtitleXL 2xl:text-bodyXL">
-          Here, you'll get a glimpse into the things that ignite my passion and
-          drive. I believe that hobbies play a significant role in shaping who
-          we are and how we perceive the world. Let me share with you a few of
-          my cherished pastimes.
+          Here, you&apos;ll get a glimpse into the things that ignite my passion
+          and drive. I believe that hobbies play a significant role in shaping
+          who we are and how we perceive the world. Let me share with you a few
+          of my cherished pastimes.
         </p>
 
         <div className="flex flex-col gap-4">
           <h3>Basketball</h3>
           <p className="text-subtitleXL 2xl:text-bodyXL">
-            Basketball isn't just a sport for me; it's a way of life. The sound
-            of sneakers on the court, the thrill of sinking the perfect shot,
-            and the bond with my teammates make basketball an incredible
-            experience. Through this game, I've learned about teamwork,
-            discipline, and never giving up.
+            Basketball isn&apos;t just a sport for me; it&apos;s a way of life.
+            The sound of sneakers on the court, the thrill of sinking the
+            perfect shot, and the bond with my teammates make basketball an
+            incredible experience. Through this game, I&apos;ve learned about
+            teamwork, discipline, and never giving up.
           </p>
         </div>
         <div className="flex flex-col gap-4">
           <h3>Movies</h3>
           <p className="text-subtitleXL 2xl:text-bodyXL">
-            I'm a big fan of movies. They have the power to transport us to
-            different worlds and make us feel a range of emotions. Whether it's
-            a drama, comedy, or action film, I love immersing myself in diverse
-            stories and exploring the art of filmmaking.
+            I&apos;m a big fan of movies. They have the power to transport us to
+            different worlds and make us feel a range of emotions. Whether
+            it&apos;s a drama, comedy, or action film, I love immersing myself
+            in diverse stories and exploring the art of filmmaking.
           </p>
         </div>
         <div className="flex flex-col gap-4">

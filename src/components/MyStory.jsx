@@ -17,7 +17,7 @@ const MyStory = () => {
           I am originally from Ukraine, but my adventurous spirit has led me to
           explore different parts of the world. I embarked on my educational
           journey as a sound engineer in Bournemouth, UK, but later transferred
-          and successfully completed my{" "}
+          and successfully completed my
           <strong>Media Communications Diploma</strong> in the vibrant city of
           Toronto, Canada.
         </p>
@@ -26,7 +26,7 @@ const MyStory = () => {
           diverse and enriching experience. Initially, I worked full-time in the
           telecommunications field, honing my skills and gaining valuable
           insights. However, my passion for creating exceptional user
-          experiences led me to venture into the realm of{" "}
+          experiences led me to venture into the realm of
           <strong>UX/UI design</strong>. Eager to expand my knowledge, I delved
           into various aspects of the discipline, including User Research,
           Information Architecture, Interaction Design, Visual Design, and tools
@@ -42,8 +42,8 @@ const MyStory = () => {
         </p>
         <p className="text-subtitleXL 2xl:text-bodyXL">
           Driven by a relentless pursuit of growth, I pursued an opportunity to
-          join the government program "IT Generation" and embarked on an
-          intensive 7-month course in <strong>Frontend Development</strong>.
+          join the government program &quot;IT Generation&quot; and embarked on
+          an intensive 7-month course in <strong>Frontend Development</strong>.
           This experience not only solidified my understanding but also provided
           me with the practical skills necessary, like <strong>React</strong>,
           to excel in the field.
@@ -53,7 +53,7 @@ const MyStory = () => {
           myself in a collaborative work environment, where I could contribute
           to a team and further challenge myself. It was during this period of
           intense study in frontend development that I secured a position at
-          <strong> Heimdal Data ApS</strong>, where I currently serve as a{" "}
+          <strong> Heimdal Data ApS</strong>, where I currently serve as a
           <strong>UX/UI Designer & Developer</strong>. This role has allowed me
           to apply my comprehensive skill set, work closely with colleagues, and
           contribute to the creation of exceptional digital experiences.

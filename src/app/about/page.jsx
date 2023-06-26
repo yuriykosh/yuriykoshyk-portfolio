@@ -30,7 +30,8 @@ const About = () => {
         <h4 className="text-white sm:text-h4L md:text-h4XL lg:text-h4L xl:text-h4XL">
           <span className="block">Hi there 👋</span>
           <span className="block">
-            I'm Yuriy, a <span className="text-fox-500">UX/UI designer</span>{" "}
+            I&apos;m Yuriy, a{" "}
+            <span className="text-fox-500">UX/UI designer</span>
           </span>
           and <span className="text-whale-500">Frontend developer</span>.
         </h4>
@@ -40,8 +41,8 @@ const About = () => {
           development expertise.
         </p>
         <p className="hidden w-2/3 mt-1 text-subtitleL xl:text-subtitleXL xs:inline-block lg:w-11/12">
-          If you're looking for a UX/UI designer and frontend developer who can
-          bring your digital projects to life, feel free to
+          If you&apos;re looking for a UX/UI designer and frontend developer who
+          can bring your digital projects to life, feel free to
           <Link
             href="mailto:yuriy.koshyk@gmail.com"
             className="inline-block ml-2 text-white underline transition text-subtitleXL decoration-1 underline-offset-2 hover:scale-105 focus:scale-105"

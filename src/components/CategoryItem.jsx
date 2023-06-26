@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Icon } from "@iconify/react";
 import { usePathname } from "next/navigation";
 import { IconCategoryDesign, IconCategoryDev } from "@/utils/Icons";
 
@@ -15,9 +14,9 @@ const CategoryItem = ({
   className,
   classes,
 }) => {
-  const renderContent = () => {
-    const pathname = usePathname();
+  const pathname = usePathname();
 
+  const renderContent = () => {
     if (id === 1 && pathname === "/portfolio/design") {
       // Render content if id === 1 and pathname === "/portfolio/design"
       return (
@@ -33,14 +32,6 @@ const CategoryItem = ({
           />
         </Link>
       );
-      // } else if (condition3) {
-      //   // Render content if condition3 is true
-      //   return (
-      //     <>
-      //       <div>Content 3</div>
-      //       <div>Content 4</div>
-      //     </>
-      //   );
     } else {
       // Render default content
       return (

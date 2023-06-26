@@ -20,11 +20,11 @@ const Workflow = () => {
           websites.
         </p>
         <p className="text-subtitleXL 2xl:text-bodyXL">
-          I'm proficient in user research, wireframing, prototyping, and
+          I&apos;m proficient in user research, wireframing, prototyping, and
           creating high-fidelity designs using tools like Sketch, Figma, and
-          Adobe Creative Suite. In addition to my design skills, I'm also a
+          Adobe Creative Suite. In addition to my design skills, I&apos;m also a
           skilled frontend developer with expertise in HTML, CSS, JavaScript,
-          and frontend frameworks/libraries such as React and Next.js. I'm
+          and frontend frameworks/libraries such as React and Next.js. I&apos;m
           experienced in building responsive, cross-browser compatible, and
           accessible web applications that adhere to modern web standards and
           best practices.
@@ -32,7 +32,7 @@ const Workflow = () => {
         <p className="pb-6 xs:pb-12 text-subtitleXL 2xl:text-bodyXL">
           My strong communication and collaboration skills make me an effective
           team player who can work seamlessly with designers, developers, and
-          other stakeholders to ensure the success of a project. I'm always
+          other stakeholders to ensure the success of a project. I&apos;m always
           seeking new challenges and opportunities to grow my skills and make a
           positive impact through design and technology.
         </p>
