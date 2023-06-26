@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import useEscape from "@/hooks/useEscape";
 
 import { IconClose } from "@/utils/Icons";
 import RoundButton from "./RoundButton";
