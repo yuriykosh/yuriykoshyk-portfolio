@@ -22,7 +22,7 @@ const ContactModal = ({ closeContactModal }) => {
     // backdrop
     <div
       onClick={() => matches && closeContactModal()}
-      className="absolute -top-2 -right-7 w-screen h-screen p-3 bg-black md:bg-black/60 md:backdrop-blur-sm z-[100]"
+      className="absolute -top-2 -right-7 md:-top-5 md:px-0 lg:-top-6 lg:-right-12 md:py-6 lg:py-8  w-screen h-screen p-3 bg-black md:bg-black/60 md:backdrop-blur-sm z-[100]"
     >
       {/* MODAL */}
       <div

@@ -7,6 +7,9 @@ import BgPicture from "@/utils/BgPicture";
 import { IconCategoryDesign, IconCategoryDev } from "@/utils/Icons";
 
 import AboutModal from "@/components/AboutModal";
+import MyStory from "@/components/MyStory";
+import Hobbies from "@/components/Hobbies";
+import Workflow from "@/components/Workflow";
 
 const About = () => {
   const [showAboutModal, setShowAboutModal] = useState(false);
@@ -14,49 +17,15 @@ const About = () => {
 
   let content;
   if (modalContent === "bio") {
-    content = (
-      <div className="flex flex-col w-full h-full gap-2 overflow-hidden overflow-y-scroll rounded-b-3xl">
-        <p className="text-subtitleXL">
-          As a UX/UI designer, I have a deep understanding of user-centered
-          design principles and have worked on a wide range of projects, from
-          web and mobile applications to e-commerce platforms and marketing
-          websites.
-        </p>
-        <p className="text-subtitleXL">
-          I'm proficient in user research, wireframing, prototyping, and
-          creating high-fidelity designs using tools like Sketch, Figma, and
-          Adobe Creative Suite. In addition to my design skills, I'm also a
-          skilled frontend developer with expertise in HTML, CSS, JavaScript,
-          and frontend frameworks such as React. I'm experienced in building
-          responsive, cross-browser compatible, and accessible web applications
-          that adhere to modern web standards and best practices.
-        </p>
-        <p className="pb-6 text-subtitleXL">
-          My strong communication and collaboration skills make me an effective
-          team player who can work seamlessly with designers, developers, and
-          other stakeholders to ensure the success of a project. I'm always
-          seeking new challenges and opportunities to grow my skills and make a
-          positive impact through design and technology.
-        </p>
-      </div>
-    );
+    content = <MyStory />;
   } else if (modalContent === "hobby") {
-    content = (
-      <div className="flex flex-col w-full h-full gap-2 overflow-hidden overflow-y-scroll rounded-b-3xl">
-        <p className="text-subtitleXL">This is hobby</p>
-      </div>
-    );
+    content = <Hobbies />;
   } else if (modalContent === "workflow") {
-    content = (
-      <div className="flex flex-col w-full h-full gap-2 overflow-hidden overflow-y-scroll rounded-b-3xl">
-        <p className="text-subtitleXL">This is workflow</p>
-      </div>
-    );
+    content = <Workflow />;
   }
 
   return (
     <div className="grid w-full h-full grid-cols-12 grid-rows-6 gap-0 2xl:p-6">
-      {/* <div className="flex flex-col justify-between gap-12"> */}
       <div className="flex flex-col col-start-1 col-end-11 row-start-1 row-end-4 gap-2 xs:col-end-12 xs:mt-4 xs:gap-3 md:gap-4 lg:col-end-8 lg:row-start-1 lg:row-end-4">
         <h4 className="text-white sm:text-h4L md:text-h4XL lg:text-h4L xl:text-h4XL">
           <span className="block">Hi there 👋</span>
@@ -73,24 +42,27 @@ const About = () => {
         <p className="hidden w-2/3 mt-1 text-subtitleL xl:text-subtitleXL xs:inline-block lg:w-11/12">
           If you're looking for a UX/UI designer and frontend developer who can
           bring your digital projects to life, feel free to
-          <button className="ml-2">
-            <p className="text-white underline transition text-subtitleXL decoration-1 underline-offset-2 hover:scale-105 focus:scale-105">
-              get in touch
-            </p>
-          </button>
+          <Link
+            href="mailto:yuriy.koshyk@gmail.com"
+            className="inline-block ml-2 text-white underline transition text-subtitleXL decoration-1 underline-offset-2 hover:scale-105 focus:scale-105"
+          >
+            {/* <p className="text-white underline transition text-subtitleXL decoration-1 underline-offset-2 hover:scale-105 focus:scale-105"> */}
+            get in touch
+            {/* </p> */}
+          </Link>
           .
         </p>
       </div>
 
       {/* BUTTONS TO SEE SOME CONTENT */}
-      <ul className="flex flex-col items-center justify-center h-full col-start-1 col-end-7 row-start-4 row-end-7 gap-4 px-6 border xs:gap-6 xs:row-start-4 xs:row-end-7 2xl:col-end-8 2xl:row-start-3 2xl:row-end-6 2xl:mt-[16%] border-white/80 grow bg-black/25 backdrop-blur-sm rounded-4xl md:rounded-[60px] ">
+      <ul className="flex flex-col items-center justify-center h-full col-start-1 col-end-9 row-start-4 row-end-7 gap-4 px-6 border xs:gap-6 xs:row-start-4 xs:row-end-7 2xl:col-end-8 2xl:row-start-3 2xl:row-end-6 2xl:mt-[16%] border-white/80 grow bg-black/25 backdrop-blur-sm rounded-4xl sm:rounded-[60px] ">
         <li>
           <button
             onClick={() => {
               setShowAboutModal(!showAboutModal);
               setModalContent("bio");
             }}
-            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105"
+            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
           >
             <p className="text-h4XS xs:text-h4S sm:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
               My Story
@@ -103,7 +75,7 @@ const About = () => {
               setShowAboutModal(!showAboutModal);
               setModalContent("hobby");
             }}
-            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105"
+            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
           >
             <p className="text-h4XS xs:text-h4S sm:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
               Hobbies
@@ -116,21 +88,22 @@ const About = () => {
               setShowAboutModal(!showAboutModal);
               setModalContent("workflow");
             }}
-            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105"
+            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
           >
             <p className="text-h4XS xs:text-h4S sm:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
-              Work Flow
+              Workflow
             </p>
           </button>
         </li>
       </ul>
 
       {/* LINKS TO PORTFOLIO */}
-      <ul className="flex flex-col items-stretch col-start-9 col-end-13 row-start-5 row-end-7 gap-2 ml-2 lg:gap-8 lg:items-end lg:col-start-11 lg:col-end-13 lg:row-start-1 lg:row-end-7 md:ml-4 lg:ml-6 justify-stretch">
+      <ul className="flex flex-col items-stretch col-start-9 col-end-13 row-start-5 row-end-7 gap-2 ml-2 xs:ml-0 xs:col-start-10 lg:gap-8 lg:items-end lg:col-start-11 lg:col-end-13 lg:row-start-1 lg:row-end-7 md:ml-4 lg:ml-6 justify-stretch">
         <li className="h-full">
           <Link
             href="/portfolio/design"
-            className="flex items-center justify-center lg:items-end h-full py-4 px-6 lg:p-8 xl:p-10 text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-fox-500/80 bg-black/25 backdrop-blur transition border border-fox-500/60 rounded-4xl md:rounded-[60px] 2xl:rounded-[80px]"
+            aria-label="Learn more about Yuriy Koshyk design work"
+            className="flex items-center justify-center lg:items-end h-full py-4 px-6 lg:p-8 xl:p-10 text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-fox-500/80 bg-black/25 backdrop-blur transition border border-fox-500/60 rounded-4xl sm:rounded-[60px] 2xl:rounded-[80px]"
           >
             <IconCategoryDesign />
           </Link>
@@ -138,7 +111,8 @@ const About = () => {
         <li className="h-full">
           <Link
             href="/portfolio/dev"
-            className="flex items-center justify-center lg:items-end h-full py-4 px-6 lg:p-8 xl:p-10 text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-whale-500/80 bg-black/25 backdrop-blur transition border border-whale-500/60 rounded-4xl md:rounded-[60px] 2xl:rounded-[80px]"
+            aria-label="Learn more about Yuriy Koshyk frontend development work"
+            className="flex items-center justify-center lg:items-end h-full py-4 px-6 lg:p-8 xl:p-10 text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-whale-500/80 bg-black/25 backdrop-blur transition border border-whale-500/60 rounded-4xl sm:rounded-[60px] 2xl:rounded-[80px]"
           >
             <IconCategoryDev />
           </Link>
