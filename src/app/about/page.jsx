@@ -103,18 +103,18 @@ const About = () => {
           <Link
             href="/portfolio/design"
             aria-label="Learn more about Yuriy Koshyk design work"
-            className="flex items-center justify-center lg:items-end h-full py-4 px-6 lg:p-8 xl:p-10 text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-fox-500/80 bg-black/25 backdrop-blur transition border border-fox-500/60 rounded-4xl sm:rounded-[60px] 2xl:rounded-[80px]"
+            className="flex items-center justify-center group lg:items-end h-full py-4 px-6 lg:p-8 xl:p-10 text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-fox-500/80 bg-black/25 backdrop-blur transition border  rounded-4xl sm:rounded-[60px] 2xl:rounded-[80px] hover:scale-105 focus:scale-105 group-hover:cursor-pointer outline-offset-4 border-fox-500/80 hover:border-fox-500 focus:border-fox-500"
           >
-            <IconCategoryDesign />
+            <IconCategoryDesign className="transition group-hover:text-fox-500 group-focus:text-fox-500 group-hover:animate-spin-slow group-focus:animate-spin-slow" />
           </Link>
         </li>
         <li className="h-full">
           <Link
             href="/portfolio/dev"
             aria-label="Learn more about Yuriy Koshyk frontend development work"
-            className="flex items-center justify-center lg:items-end h-full py-4 px-6 lg:p-8 xl:p-10 text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-whale-500/80 bg-black/25 backdrop-blur transition border border-whale-500/60 rounded-4xl sm:rounded-[60px] 2xl:rounded-[80px]"
+            className="flex items-center justify-center group lg:items-end h-full py-4 px-6 lg:p-8 xl:p-10 text-[32px] leading-none  xs:text-[40px] md:text-[66px] 2xl:text-[96px] text-whale-500/80 bg-black/25 backdrop-blur transition border rounded-4xl sm:rounded-[60px] 2xl:rounded-[80px] hover:scale-105 focus:scale-105 group-hover:cursor-pointer outline-offset-4 border-whale-500/80 hover:border-whale-500 focus:border-whale-500"
           >
-            <IconCategoryDev />
+            <IconCategoryDev className="transition group-hover:text-whale-500 group-focus:text-whale-500 group-hover:animate-spin-slow group-focus:animate-spin-slow" />
           </Link>
         </li>
       </ul>
