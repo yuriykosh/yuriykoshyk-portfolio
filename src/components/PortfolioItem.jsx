@@ -29,8 +29,8 @@ const PortfolioItem = ({ id, name, href, imageSrc, year }) => {
             className={cn(
               "object-cover overflow-hidden hover:scale-110 focus:scale-110 focus:border-fox-500 transition duration-300 ease-in-out",
               isLoading
-                ? "grayscale blur-2xl scale-110 duration-700 ease-in-out"
-                : "grayscale-0 blur-0 scale-100 duration-700 ease-in-out"
+                ? "grayscale blur-2xl scale-110 duration-300 ease-in-out"
+                : "grayscale-0 blur-0 scale-100 duration-300 ease-in-out"
             )}
             onLoadingComplete={() => setLoading(false)}
           />
