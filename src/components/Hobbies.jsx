@@ -43,7 +43,7 @@ const Hobbies = () => {
           <h3>Film Photography</h3>
           <p className="text-subtitleXL 2xl:text-bodyXL">
             In this digital age, film photography holds a special place in my
-            heart. There's something unique and nostalgic about capturing
+            heart. There&apos;s something unique and nostalgic about capturing
             moments on film. It requires patience, attention to detail, and a
             creative eye. Developing the film and seeing the final images is a
             rewarding experience.
