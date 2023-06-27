@@ -36,7 +36,7 @@ export default function Home() {
       >
         Yuriy
       </h1>
-      <div className="flex flex-col w-3/5 gap-4 ml-auto xs:gap-10 xs:h-fit sm:w-2/5 md:w-1/2 lg:h-full lg:items-stretch lg:gap-8 lg:w-2/5 xl:gap-24 2xl:gap-20 xl:w-1/3 2xl:w-1/3 ">
+      <div className="flex flex-col w-3/5 gap-4 ml-auto xs:gap-6 sm:gap-10 xs:h-fit sm:w-2/5 md:w-1/2 lg:h-full lg:items-stretch lg:gap-8 lg:w-2/5 xl:gap-24 2xl:gap-20 xl:w-1/3 2xl:w-1/3 ">
         {category.map((item) => (
           <CategoryItem key={item.id} {...item} />
         ))}

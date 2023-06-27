@@ -52,7 +52,7 @@ const NavbarItem = ({
           <button
             onClick={handleOpen}
             className={twMerge(
-              `relative group text-white/60 transition hover:text-white focus:text-white active:text-white outline-offset-4`,
+              `relative group text-white/60 transition max-lg:w-fit max-lg:mx-auto hover:text-white focus:text-white active:text-white outline-offset-4`,
 
               // active && `${className} text-white`,
               pathname === "/portfolio/design"
@@ -75,7 +75,7 @@ const NavbarItem = ({
           {open ? (
             <ul
               onMouseLeave={handleMouseLeave}
-              className="flex flex-col max-lg:justify-center max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:mt-10 lg:absolute lg:z-10 lg:gap-1 lg:p-4 lg:-ml-4 lg:rounded-lg lg:bg-black/60"
+              className="flex flex-col max-lg:w-fit max-lg:justify-center max-lg:items-center max-lg:gap-6 max-lg:mb-6 max-lg:mt-10 lg:absolute lg:z-10 lg:gap-1 lg:p-4 lg:-ml-4 lg:rounded-lg lg:bg-black/60"
             >
               {category.map(({ label, href, className }) => (
                 <li

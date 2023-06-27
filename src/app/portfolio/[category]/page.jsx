@@ -22,7 +22,6 @@ const Category = () => {
       id: 1,
       headingStart: "UX/UI",
       headingEnd: "Design",
-      icon: "carbon:navaid-ndb",
       href: "/portfolio/design",
       color:
         "text-fox-500/80 group-hover:text-fox-500 group-focus:text-fox-500",
@@ -32,7 +31,6 @@ const Category = () => {
       id: 2,
       headingStart: "Frontend",
       headingEnd: "Development",
-      icon: "carbon:navaid-tacan",
       href: "/portfolio/dev",
       color:
         "text-whale-500/80 group-hover:text-whale-500 group-focus:text-whale-500",
@@ -45,7 +43,7 @@ const Category = () => {
   const devData = category.find((item) => item.id === 2);
 
   return (
-    <div className="flex flex-col justify-between h-full xs:pb-10 lg:p-0">
+    <div className="flex flex-col justify-between h-full">
       {pathname === "/portfolio/design" ? (
         // * -------------- DESIGN PAGE -------------- *
 

@@ -1,6 +1,6 @@
 const DevSkills = () => {
   return (
-    <ol className="flex flex-col gap-2 xl:gap-3">
+    <ol className="flex flex-col gap-2 xs:gap-1.5 sm:gap-2 xl:gap-3">
       <li>
         <p>Attention to details</p>
       </li>

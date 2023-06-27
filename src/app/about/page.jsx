@@ -26,11 +26,11 @@ const About = () => {
 
   return (
     <div className="grid w-full h-full grid-cols-12 grid-rows-6 gap-0 2xl:p-6">
-      <div className="flex flex-col col-start-1 col-end-11 row-start-1 row-end-4 gap-2 xs:col-end-12 xs:mt-4 xs:gap-3 md:gap-4 lg:col-end-8 lg:row-start-1 lg:row-end-4">
+      <div className="flex flex-col col-start-1 col-end-11 row-start-1 row-end-4 gap-2 xs:col-end-12 lg:mt-4 xs:gap-3 md:gap-4 lg:col-end-8 lg:row-start-1 lg:row-end-4">
         <h4 className="text-white sm:text-h4L md:text-h4XL lg:text-h4L xl:text-h4XL">
           <span className="block">Hi there 👋</span>
           <span className="block">
-            I&apos;m Yuriy, a{" "}
+            I&apos;m Yuriy, a
             <span className="text-fox-500">UX/UI designer</span>
           </span>
           and <span className="text-whale-500">Frontend developer</span>.
@@ -40,16 +40,14 @@ const About = () => {
           has led me to develop a diverse skillset that combines design and
           development expertise.
         </p>
-        <p className="hidden w-2/3 mt-1 text-subtitleL xl:text-subtitleXL xs:inline-block lg:w-11/12">
+        <p className="hidden w-2/3 mt-1 text-subtitleL xs:w-[80%] md:w-2/3 xl:text-subtitleXL xs:inline-block lg:w-11/12">
           If you&apos;re looking for a UX/UI designer and frontend developer who
           can bring your digital projects to life, feel free to
           <Link
             href="mailto:yuriy.koshyk@gmail.com"
             className="inline-block ml-2 text-white underline transition text-subtitleXL decoration-1 underline-offset-2 hover:scale-105 focus:scale-105"
           >
-            {/* <p className="text-white underline transition text-subtitleXL decoration-1 underline-offset-2 hover:scale-105 focus:scale-105"> */}
             get in touch
-            {/* </p> */}
           </Link>
           .
         </p>

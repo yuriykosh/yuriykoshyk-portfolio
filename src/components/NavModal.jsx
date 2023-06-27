@@ -19,7 +19,7 @@ const NavModal = ({
       }`}
     >
       {/* container */}
-      <div className="flex flex-col w-full h-full gap-24 xs:gap-36 md:gap-28 md:p-6">
+      <div className="flex flex-col w-full h-full gap-24 md:gap-28 md:p-6">
         {/* close button */}
         <button
           onClick={() => closeNavModal()}
