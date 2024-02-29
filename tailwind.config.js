@@ -105,6 +105,14 @@ module.exports = {
             fontWeight: "400",
           },
         ],
+        h4M: [
+          "28px",
+          {
+            lineHeight: "34px",
+            letterSpacing: "-0.007em",
+            fontWeight: "400",
+          },
+        ],
         h4L: [
           "36px",
           {

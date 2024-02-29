@@ -26,14 +26,14 @@ const About = () => {
 
   return (
     <div className="grid w-full h-full grid-cols-12 grid-rows-6 gap-0 2xl:p-6">
-      <div className="flex flex-col col-start-1 col-end-11 row-start-1 row-end-4 gap-2 xs:col-end-12 lg:mt-4 xs:gap-3 md:gap-4 lg:col-end-8 lg:row-start-1 lg:row-end-4">
-        <h4 className="text-white sm:text-h4L md:text-h4XL lg:text-h4L xl:text-h4XL">
+      <div className="flex flex-col col-start-1 col-end-11 row-start-1 row-end-4 gap-2 min-[410px]:mb-[30%] xs:col-end-12 lg:mt-4 md:gap-4 lg:col-end-8 lg:row-start-1 lg:row-end-4">
+        <h4 className="text-white text-h4L mb-3 min-[410px]:mt-auto sm:text-h4XL xl:text-h4XL">
           <span className="block">Hi there 👋</span>
           <span className="block">
-            I&apos;m Yuriy, a
-            <span className="text-fox-500">UX/UI designer</span>
+            I&apos;m Yuriy, 
+            <span className="text-fox-500"> Designer</span>
           </span>
-          and <span className="text-whale-500">Frontend developer</span>.
+          and <span className="text-whale-500"> Developer</span>.
         </h4>
         <p className="text-subtitle xs:text-subtitleL xl:text-subtitleXL xs:w-[90%] lg:w-full">
           My passion for creating beautiful and functional digital experiences
@@ -41,7 +41,7 @@ const About = () => {
           development expertise.
         </p>
         <p className="hidden w-2/3 mt-1 text-subtitleL xs:w-[80%] md:w-2/3 xl:text-subtitleXL xs:inline-block lg:w-11/12">
-          If you&apos;re looking for a UX/UI designer and frontend developer who
+          If you&apos;re looking for a designer who
           can bring your digital projects to life, feel free to
           <Link
             href="mailto:yuriy.koshyk@gmail.com"
@@ -54,16 +54,16 @@ const About = () => {
       </div>
 
       {/* BUTTONS TO SEE SOME CONTENT */}
-      <ul className="flex flex-col items-center justify-center h-full col-start-1 col-end-9 row-start-4 row-end-7 gap-4 px-6 border xs:gap-6 xs:row-start-4 xs:row-end-7 2xl:col-end-8 2xl:row-start-3 2xl:row-end-6 2xl:mt-[16%] border-white/80 grow bg-black/25 backdrop-blur-sm rounded-4xl sm:rounded-[60px] ">
+      <ul className="flex flex-col items-center justify-center h-full col-start-1 col-end-9 row-start-4 row-end-7 gap-4 px-6 border max-[375px]:max-h-56 max-[375px]:mt-auto xs:gap-6 xs:row-start-4 xs:row-end-7 2xl:col-end-8 2xl:row-start-3 2xl:row-end-6 2xl:mt-[16%] border-white/80 grow bg-black/25 backdrop-blur-sm rounded-4xl sm:rounded-[60px] ">
         <li>
           <button
             onClick={() => {
               setShowAboutModal(!showAboutModal);
               setModalContent("bio");
             }}
-            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
+            className="flex items-center justify-center px-6 py-0.5 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
           >
-            <p className="text-h4XS xs:text-h4S sm:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
+            <p className="text-h4XS xs:text-h4M min-[410px]:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
               My Story
             </p>
           </button>
@@ -74,9 +74,9 @@ const About = () => {
               setShowAboutModal(!showAboutModal);
               setModalContent("hobby");
             }}
-            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
+            className="flex items-center justify-center px-6 py-0.5 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
           >
-            <p className="text-h4XS xs:text-h4S sm:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
+            <p className="text-h4XS xs:text-h4M min-[410px]:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
               Hobbies
             </p>
           </button>
@@ -87,9 +87,9 @@ const About = () => {
               setShowAboutModal(!showAboutModal);
               setModalContent("workflow");
             }}
-            className="flex items-center justify-center px-6 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
+            className="flex items-center justify-center px-6 py-0.5 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
           >
-            <p className="text-h4XS xs:text-h4S sm:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
+            <p className="text-h4XS xs:text-h4M min-[410px]:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
               Workflow
             </p>
           </button>
@@ -97,7 +97,7 @@ const About = () => {
       </ul>
 
       {/* LINKS TO PORTFOLIO */}
-      <ul className="flex flex-col items-stretch col-start-9 col-end-13 row-start-5 row-end-7 gap-2 ml-2 xs:ml-0 xs:col-start-10 lg:gap-8 lg:items-end lg:col-start-11 lg:col-end-13 lg:row-start-1 lg:row-end-7 md:ml-4 lg:ml-6 justify-stretch">
+      <ul className="flex flex-col items-stretch col-start-9 col-end-13 row-start-5 row-end-7 gap-2  ml-2 xs:ml-0 xs:col-start-10 lg:gap-8 lg:items-end lg:col-start-11 lg:col-end-13 lg:row-start-1 lg:row-end-7 md:ml-4 lg:ml-6 justify-stretch">
         <li className="h-full">
           <Link
             href="/portfolio/design"

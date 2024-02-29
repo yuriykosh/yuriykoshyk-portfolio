@@ -20,7 +20,7 @@ const Category = () => {
   const category = [
     {
       id: 1,
-      headingStart: "UX/UI",
+      headingStart: " ",
       headingEnd: "Design",
       href: "/portfolio/design",
       color:
@@ -29,7 +29,7 @@ const Category = () => {
     },
     {
       id: 2,
-      headingStart: "Frontend",
+      headingStart: " ",
       headingEnd: "Development",
       href: "/portfolio/dev",
       color:
