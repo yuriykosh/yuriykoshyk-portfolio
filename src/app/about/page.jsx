@@ -27,22 +27,22 @@ const About = () => {
   return (
     <div className="grid w-full h-full grid-cols-12 grid-rows-6 gap-0 2xl:p-6">
       <div className="flex flex-col col-start-1 col-end-11 row-start-1 row-end-4 gap-2 min-[410px]:mb-[30%] xs:col-end-12 lg:mt-4 md:gap-4 lg:col-end-8 lg:row-start-1 lg:row-end-4">
-        <h4 className="text-white text-h4L mb-3 min-[410px]:mt-auto sm:text-h4XL xl:text-h4XL">
-          <span className="block">Hi there 👋</span>
+        <h4 className="text-white text-h4L mb-3 min-[410px]:mt-auto sm:text-h4XL xl:text-[82px] xl:leading-none">
+          <span className="block">Hi there </span>
           <span className="block">
-            I&apos;m Yuriy, 
+            I&apos;m Yuriy,
             <span className="text-fox-500"> Designer</span>
           </span>
           and <span className="text-whale-500"> Developer</span>.
         </h4>
-        <p className="text-subtitle xs:text-subtitleL xl:text-subtitleXL xs:w-[90%] lg:w-full">
+        <p className="text-subtitle xs:text-subtitleL xl:text-subtitleXL xs:w-[90%] lg:w-full 2xl:w-4/5">
           My passion for creating beautiful and functional digital experiences
           has led me to develop a diverse skillset that combines design and
           development expertise.
         </p>
         <p className="hidden w-2/3 mt-1 text-subtitleL xs:w-[80%] md:w-2/3 xl:text-subtitleXL xs:inline-block lg:w-11/12">
-          If you&apos;re looking for a designer who
-          can bring your digital projects to life, feel free to
+          If you&apos;re looking for a designer who can bring your digital
+          projects to life, feel free to
           <Link
             href="mailto:yuriy.koshyk@gmail.com"
             className="inline-block ml-2 text-white underline transition text-subtitleXL decoration-1 underline-offset-2 hover:scale-105 focus:scale-105"
@@ -97,7 +97,7 @@ const About = () => {
       </ul>
 
       {/* LINKS TO PORTFOLIO */}
-      <ul className="flex flex-col items-stretch col-start-9 col-end-13 row-start-5 row-end-7 gap-2  ml-2 xs:ml-0 xs:col-start-10 lg:gap-8 lg:items-end lg:col-start-11 lg:col-end-13 lg:row-start-1 lg:row-end-7 md:ml-4 lg:ml-6 justify-stretch">
+      <ul className="flex flex-col items-stretch col-start-9 col-end-13 row-start-5 row-end-7 gap-2 ml-2 xs:ml-0 xs:col-start-10 lg:gap-8 lg:items-end lg:col-start-11 lg:col-end-13 lg:row-start-1 lg:row-end-7 md:ml-4 lg:ml-6 justify-stretch">
         <li className="h-full">
           <Link
             href="/portfolio/design"

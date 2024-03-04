@@ -90,7 +90,7 @@ module.exports = {
         ],
         // H4
         h4XS: [
-          "18px",
+          "20px",
           {
             lineHeight: "24px",
             letterSpacing: "-0.007em",
@@ -98,33 +98,33 @@ module.exports = {
           },
         ],
         h4S: [
-          "24px",
+          "26px",
           {
-            lineHeight: "30px",
+            lineHeight: "32px",
             letterSpacing: "-0.007em",
             fontWeight: "400",
           },
         ],
         h4M: [
-          "28px",
+          "30px",
           {
-            lineHeight: "34px",
+            lineHeight: "36px",
             letterSpacing: "-0.007em",
             fontWeight: "400",
           },
         ],
         h4L: [
-          "36px",
+          "38px",
           {
-            lineHeight: "42px",
+            lineHeight: "44px",
             letterSpacing: "-0.007em",
             fontWeight: "400",
           },
         ],
         h4XL: [
-          "54px",
+          "56px",
           {
-            lineHeight: "63px",
+            lineHeight: "65px",
             letterSpacing: "-0.007em",
             fontWeight: "400",
           },

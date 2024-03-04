@@ -18,7 +18,7 @@ const MyStory = () => {
           explore different parts of the world. I embarked on my educational
           journey as a sound engineer in Bournemouth, UK, but later transferred
           and successfully completed my
-          <strong>Media Communications Diploma</strong> in the vibrant city of
+          <strong> Media Communications Diploma</strong> in the vibrant city of
           Toronto, Canada.
         </p>
         <p className="text-subtitleXL 2xl:text-bodyXL">
@@ -27,13 +27,13 @@ const MyStory = () => {
           telecommunications field, honing my skills and gaining valuable
           insights. However, my passion for creating exceptional user
           experiences led me to venture into the realm of
-          <strong>UX/UI design</strong>. Eager to expand my knowledge, I delved
+          <strong> UX/UI design</strong>. Eager to expand my knowledge, I delved
           into various aspects of the discipline, including User Research,
           Information Architecture, Interaction Design, Visual Design, and tools
           like <strong>Figma</strong>.
         </p>
         <p className="text-subtitleXL 2xl:text-bodyXL">
-          As a <strong>UX/UI designer</strong>, I soon realized the importance
+          As a <strong> UX/UI designer</strong>, I soon realized the importance
           of effective collaboration with developers. Determined to bridge the
           gap between design and development, I decided to enhance my skill set
           by learning frontend development. This enabled me to comprehend the
@@ -54,7 +54,7 @@ const MyStory = () => {
           to a team and further challenge myself. It was during this period of
           intense study in frontend development that I secured a position at
           <strong> Heimdal Data ApS</strong>, where I currently serve as a
-          <strong>UX/UI Designer & Developer</strong>. This role has allowed me
+          <strong> UX/UI Designer & Developer</strong>. This role has allowed me
           to apply my comprehensive skill set, work closely with colleagues, and
           contribute to the creation of exceptional digital experiences.
         </p>
@@ -62,9 +62,8 @@ const MyStory = () => {
           As I continue to embark on exciting adventures across Europe, I am
           actively seeking new opportunities that will further push the
           boundaries of my expertise. I am eager to contribute my skills and
-          passion as a <strong>UX/UI designer and frontend developer</strong> to
-          organizations that value innovation, teamwork, and the pursuit of
-          excellence.
+          passion as a <strong>Product Designer</strong> to organizations that
+          value innovation, teamwork, and the pursuit of excellence.
         </p>
       </div>
     </div>
