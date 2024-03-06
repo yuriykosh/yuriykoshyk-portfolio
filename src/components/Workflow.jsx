@@ -14,7 +14,7 @@ const Workflow = () => {
       <h2 className="text-white lg:ml-8">My Workflow</h2>
       <div className="flex flex-col gap-6 lg:w-[90%] lg:ml-8">
         <p className="text-subtitleXL 2xl:text-bodyXL">
-          As a UX/UI designer, I have a deep understanding of user-centered
+          As a product designer, I have a deep understanding of user-centered
           design principles and have worked on a wide range of projects, from
           web and mobile applications to e-commerce platforms and marketing
           websites.
