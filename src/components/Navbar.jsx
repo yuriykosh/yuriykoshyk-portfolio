@@ -54,7 +54,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="relative flex justify-end mx-4 lg:justify-between items-baseline pt-1.5 pb-[5px] px-0 lg:mx-8">
+    <header className="relative flex items-baseline justify-end px-0 py-1 mx-4 lg:justify-between lg:mx-8">
       {/* LOGO */}
       <Link
         href="/"
@@ -108,7 +108,7 @@ const Navbar = () => {
 
       <button
         onClick={() => setShowContactModal(!showContactModal)}
-        className="hidden group lg:flex flex-row items-center justify-center gap-2 py-0.5 px-1 duration-300 bg-transparent cursor-pointer border-[0.5px] border-white/40 rounded-4xl text-subtitle lg:text-subtitleL 2xl:text-subtitleXL text-white/60 transition hover:text-white hover:border-white/60 focus:text-white focus:border-white/60 outline-offset-4 hover:scale-105 focus:scale-105"
+        className="hidden group lg:flex flex-row items-center justify-center gap-2 py-1 px-2 duration-300 bg-transparent cursor-pointer border-[0.5px] border-white/40 rounded-4xl text-subtitle lg:text-subtitleL 2xl:text-subtitleXL text-white/60 transition hover:text-white hover:border-white/60 focus:text-white focus:border-white/60 outline-offset-4 hover:scale-105 focus:scale-105 animate-pulse"
       >
         Contact
         <IconArrowRight className="hidden text-white transition duration-500 opacity-0 group-hover:block group-hover:opacity-100" />

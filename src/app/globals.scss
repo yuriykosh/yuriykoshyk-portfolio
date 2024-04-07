@@ -7,6 +7,13 @@
   body {
     @apply max-w-full  overflow-hidden text-white/80;
   }
+  html {
+    --cursor-color: #fff;
+  }
+
+  html.dark-mode {
+    --cursor-color: #fff;
+  }
 
   body {
     @apply flex flex-col justify-between gap-2 w-full max-w-full p-3 pt-0 xs:pt-3 sm:pb-6 lg:p-4 bg-black antialiased;

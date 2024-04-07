@@ -26,16 +26,16 @@ const About = () => {
 
   return (
     <div className="grid w-full h-full grid-cols-12 grid-rows-6 gap-0 2xl:p-6">
-      <div className="flex flex-col col-start-1 col-end-11 row-start-1 row-end-4 gap-2 min-[410px]:mb-[30%] xs:col-end-12 lg:mt-4 md:gap-4 lg:col-end-8 lg:row-start-1 lg:row-end-4">
-        <h4 className="text-white text-h4L mb-3 min-[410px]:mt-auto sm:text-h4XL xl:text-[82px] xl:leading-none">
-          <span className="block">Hi there </span>
+      <div className="flex flex-col col-start-1 col-end-11 row-start-1 row-end-4 gap-2 min-[410px]:mb-[30%] xs:col-end-12 lg:mt-4 md:gap-4 lg:col-end-8 lg:row-start-1 lg:row-end-4 xl:ml-12">
+        <h4 className="text-white text-h4L mb-3 min-[410px]:mt-auto sm:text-h4XL xl:text-[76px] xl:leading-none min-[1920px]:text-[82px]">
+          <span className="block">Hi there!</span>
           <span className="block">
             I&apos;m Yuriy,
             <span className="text-fox-500"> Designer</span>
           </span>
           and <span className="text-whale-500"> Developer</span>.
         </h4>
-        <p className="text-subtitle xs:text-subtitleL xl:text-subtitleXL xs:w-[90%] lg:w-full 2xl:w-4/5">
+        <p className="text-subtitle xs:text-subtitleL xl:text-subtitleXL xs:w-[90%] lg:w-full 2xl:w-11/12">
           My passion for creating beautiful and functional digital experiences
           has led me to develop a diverse skillset that combines design and
           development expertise.
@@ -54,7 +54,7 @@ const About = () => {
       </div>
 
       {/* BUTTONS TO SEE SOME CONTENT */}
-      <ul className="flex flex-col items-center justify-center h-full col-start-1 col-end-9 row-start-4 row-end-7 gap-4 px-6 border max-[375px]:max-h-56 max-[375px]:mt-auto xs:gap-6 xs:row-start-4 xs:row-end-7 2xl:col-end-8 2xl:row-start-3 2xl:row-end-6 2xl:mt-[16%] border-white/80 grow bg-black/25 backdrop-blur-sm rounded-4xl sm:rounded-[60px] ">
+      <ul className="flex flex-col items-center justify-center h-full col-start-1 col-end-9 row-start-4 row-end-7 gap-4 px-6 border max-[375px]:max-h-56 max-[375px]:mt-auto xs:gap-6 xs:row-start-4 xs:row-end-7 2xl:col-end-8 2xl:row-start-3 2xl:row-end-6 2xl:mt-[15%] border-white/80 grow bg-black/25 backdrop-blur-sm rounded-4xl sm:rounded-[60px] ">
         <li>
           <button
             onClick={() => {
