@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.scss";
 
+import AnimatedCursor from "@/utils/CustomCursor";
 import Navbar from "@/components/Navbar";
 import NoisePicture from "@/utils/NoisePicture";
 
@@ -18,6 +19,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* cursor */}
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={1.7}
+        outerAlpha={0}
+        outerStyle={{
+          border: "3px solid rgba(255, 255, 255, 0.65)",
+        }}
+        innerStyle={{
+          backgroundColor: "var(--cursor-color)",
+        }}
+      />
+
       <body className={fixel.className} suppressHydrationWarning={true}>
         <Navbar />
         <main className="relative w-full h-full max-w-full max-h-full px-2 py-4 overflow-hidden bg-transparent lg:px-4 lg:py-6 rounded-3xl lg:rounded-4xl">

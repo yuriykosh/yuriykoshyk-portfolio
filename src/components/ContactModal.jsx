@@ -7,15 +7,30 @@ import RoundButton from "./RoundButton";
 import ContactLink from "./ContactLink";
 
 const ContactModal = ({ closeContactModal }) => {
+  // State to manage modal position
+  const [modalOpen, setModalOpen] = useState(false);
+
+  // State to manage media query matches
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
   );
 
+  // useEffect to add event listener for media query changes
   useEffect(() => {
-    window
-      .matchMedia("(min-width: 768px)")
-      .addEventListener("change", (e) => setMatches(e.matches));
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const handler = (e) => setMatches(e.matches);
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
   }, []);
+
+  // useEffect to handle modal opening and closing
+  useEffect(() => {
+    if (matches) {
+      setModalOpen(true);
+    } else {
+      setModalOpen(false);
+    }
+  }, [matches]);
 
   return (
     // backdrop
@@ -28,7 +43,11 @@ const ContactModal = ({ closeContactModal }) => {
         onClick={(e) => {
           e.stopPropagation(); // alternative to pointer-events:none
         }}
-        className="flex flex-col lg:flex-row lg:items-start gap-8 bg-black border border-r-0 border-transparent md:ml-auto md:w-[600px] lg:w-[512px] xl:w-[600px] 2xl:w-[656px] md:p-8 md:border-white/60 xs:gap-16 rounded-l-4xl md:rounded-l-[60px] 2xl:p-10"
+        className={`flex flex-col lg:flex-row lg:items-start gap-8 bg-black border border-r-0 border-transparent ${
+          modalOpen
+            ? "ml-[100%] -translate-x-full duration-150 ease-out"
+            : "ml-[100%] duration-150 ease-out"
+        } md:w-[600px] lg:w-[512px] xl:w-[600px] 2xl:w-[656px] md:p-8 md:border-white/60 xs:gap-16 rounded-l-4xl md:rounded-l-[60px] 2xl:p-10`}
       >
         {/* close btn */}
         <RoundButton
@@ -56,9 +75,9 @@ const ContactModal = ({ closeContactModal }) => {
                   +420 776 182 501
                 </ContactLink>
               </li>
-              <li>
+              {/* <li>
                 <ContactLink href="Yuriy Koshyk - Resume.pdf">CV</ContactLink>
-              </li>
+              </li> */}
             </ul>
             <ul className="flex flex-col items-end gap-2">
               <li>

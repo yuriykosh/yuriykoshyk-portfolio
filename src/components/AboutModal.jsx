@@ -1,10 +1,23 @@
+import { useEffect, useState } from "react";
+
 import { IconClose } from "@/utils/Icons";
 import RoundButton from "./RoundButton";
 
 const AboutModal = ({ children, showAboutModal, closeAboutModal }) => {
+  // State to manage modal position
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
+    // backdrop
     <div className="absolute z-50 h-full px-6 bg-black/50 -right-3 -left-3 2xl:top-0 backdrop-blur-sm">
-      <div className="relative p-4 pr-2 sm:p-6 sm:pr-3 md:pr-4 xl:p-8 xl:pr-4 border border-t-0 bg-black/30 backdrop-blur border-white/60 h-4/5 2xl:h-[88%] rounded-b-4xl md:rounded-b-[60px]">
+      {/* modal */}
+      <div
+        className={`relative p-4 pr-2 ${
+          modalOpen
+            ? "-translate-y-[120%] delay-900 duration-300 ease-out"
+            : "duration-300 delay-900 ease-out"
+        } sm:p-6 sm:pr-3 md:pr-4 xl:p-8 xl:pr-4 border border-t-0 bg-black/30 backdrop-blur border-white/60 h-4/5 2xl:h-[88%] rounded-b-4xl md:rounded-b-[60px]`}
+      >
         {children}
 
         <RoundButton

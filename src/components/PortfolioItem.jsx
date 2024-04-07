@@ -24,7 +24,7 @@ const PortfolioItem = ({ id, name, href, imageSrc, year }) => {
             src={imageSrc}
             alt={name}
             fill
-            sizes="(max-width: 767px) 18rem, (max-width: 1023px) 18rem, (max-width: 1279px) 15rem, (max-width: 1535px) 24rem, 24rem"
+            // sizes="(max-width: 767px) 18rem, (max-width: 1023px) 18rem, (max-width: 1279px) 15rem, (max-width: 1535px) 24rem, 24rem"
             quality={100}
             className={cn(
               "object-cover overflow-hidden hover:scale-110 focus:scale-110 focus:border-fox-500 transition duration-300 ease-in-out",
@@ -36,13 +36,13 @@ const PortfolioItem = ({ id, name, href, imageSrc, year }) => {
           />
           <div className="absolute w-full h-full bg-gradient-to-b from-white/0 from-0% via-white/0 via-70% to-white pointer-events-none"></div>
           {pathname === "/portfolio/design" ? (
-            <ul className="absolute flex gap-1 left-4 bottom-4">
-              <li className="flex items-center justify-center px-1 py-0.5  border border-fox-500/80 rounded-4xl backdrop-blur-sm">
+            <ul className="absolute flex gap-1 right-4 bottom-4">
+              <li className="flex items-center justify-center px-2 py-1 border border-fox-500/80 rounded-4xl backdrop-blur-sm">
                 <p className="text-fox-500 text-subtitle lg:text-subtitleL 2xl:text-subtitleXL">
                   {name}
                 </p>
               </li>
-              <li className="flex items-center justify-center px-1 py-0.5 border border-fox-500/80 bg-fox-500/80 rounded-4xl">
+              <li className="flex items-center justify-center px-2 py-1 border border-fox-500/80 bg-fox-500/80 rounded-4xl">
                 <time
                   timedate={year}
                   className="text-white text-subtitle lg:text-subtitleL 2xl:text-subtitleXL"
@@ -52,13 +52,13 @@ const PortfolioItem = ({ id, name, href, imageSrc, year }) => {
               </li>
             </ul>
           ) : (
-            <ul className="absolute flex gap-1 left-4 bottom-4">
-              <li className="flex items-center justify-center px-1 py-0.5  border border-whale-500/80 rounded-4xl backdrop-blur-sm">
+            <ul className="absolute flex gap-1 right-4 bottom-4">
+              <li className="flex items-center justify-center px-2 py-1 border border-whale-500/80 rounded-4xl backdrop-blur-sm">
                 <p className="text-whale-500 text-subtitle 2xl:text-subtitleXL">
                   {name}
                 </p>
               </li>
-              <li className="flex items-center justify-center px-1 py-0.5 border border-whale-500/80 bg-whale-500/80 rounded-4xl">
+              <li className="flex items-center justify-center px-2 py-1 border border-whale-500/80 bg-whale-500/80 rounded-4xl">
                 <time
                   timedate={year}
                   className="text-white text-subtitle 2xl:text-subtitleXL"
