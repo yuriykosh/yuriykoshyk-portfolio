@@ -76,7 +76,7 @@ digital experiences focusing on business and user needs.
             className="flex items-center justify-center px-6 py-0.5 transition border rounded-full 2xl:px-12 2xl:py-2 border-white/60 hover:border-white focus:border-white hover:bg-white focus:bg-white hover:scale-105 focus:scale-105 active:border-white/60 active:bg-transparent active:scale-100"
           >
             <p className="text-h4XS xs:text-h4M min-[410px]:text-h4L md:text-h4XL 2xl:text-h3L text-stroke">
-              Hobbies
+              Philosophy
             </p>
           </button>
         </li>
