@@ -36,8 +36,7 @@ const About = () => {
           and <span className="text-whale-500"> Developer</span>.
         </h4>
         <p className="text-subtitle xs:text-subtitleL xl:text-subtitleXL xs:w-[90%] lg:w-full 2xl:w-11/12">
-          My passion for creating beautiful and functional digital products. Bringing together design finesse and technical prowess, I excel in crafting impactful 
-digital experiences focusing on business and user needs.   
+          My passion is creating beautiful and functional digital products. Bringing together design finesse and technical prowess, I excel in crafting impactful digital experiences focusing on business and user needs.   
         </p>
         <p className="hidden w-2/3 mt-1 text-subtitleL xs:w-[80%] md:w-2/3 xl:text-subtitleXL xs:inline-block lg:w-11/12">
           If you&apos;re looking for a designer who can bring your digital
