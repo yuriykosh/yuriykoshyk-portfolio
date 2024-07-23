@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
 
           <NoisePicture />
           <p className="absolute left-4 bottom-1 text-[6px] leading-[14px] lg:text-[8px] lg:leading-4 lg:left-6 xl:bottom-1  text-white/40">
-            Copyright ©2023 By Yuriy Koshyk
+            Copyright ©2024 By Yuriy Koshyk
           </p>
         </main>
       </body>
