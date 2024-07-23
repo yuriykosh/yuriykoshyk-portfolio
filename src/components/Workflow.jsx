@@ -53,7 +53,7 @@ const Workflow = () => {
         <div className="flex flex-col gap-4 pb-6 xs:pb-12">
           <h3>Monitoring</h3>
           <p className="text-subtitleXL 2xl:text-bodyXL">
-            Just because a project is live doesn't mean the work is done. We monitor its performance to discover ideas for improvement.
+            Just because a project is live doesn&#39;t mean the work is done. We monitor its performance to discover ideas for improvement.
           </p>
         </div>
         
