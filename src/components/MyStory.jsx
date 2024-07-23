@@ -14,56 +14,22 @@ const MyStory = () => {
       <h2 className="text-white lg:ml-8">My Story</h2>
       <div className="flex flex-col gap-6 lg:w-[90%] lg:ml-8">
         <p className="text-subtitleXL 2xl:text-bodyXL">
-          I am originally from Ukraine, but my adventurous spirit has led me to
-          explore different parts of the world. I embarked on my educational
-          journey as a sound engineer in Bournemouth, UK, but later transferred
-          and successfully completed my
-          <strong> Media Communications Diploma</strong> in the vibrant city of
-          Toronto, Canada.
+          Originally from Ukraine, my adventurous spirit has driven me to explore various parts of the world. My educational journey began in Bournemouth, UK, where I studied Computing. I then transferred to Toronto, Canada, and completed my Media Communications Diploma at Humber College. My pursuit of excellence in UX design led me to further my studies at the Projector Institute and IT School GoIT.
         </p>
         <p className="text-subtitleXL 2xl:text-bodyXL">
-          My professional journey began quite some time ago, and it has been a
-          diverse and enriching experience. Initially, I worked full-time in the
-          telecommunications field, honing my skills and gaining valuable
-          insights. However, my passion for creating exceptional user
-          experiences led me to venture into the realm of
-          <strong> UX/UI design</strong>. Eager to expand my knowledge, I delved
-          into various aspects of the discipline, including User Research,
-          Information Architecture, Interaction Design, Visual Design, and tools
-          like <strong>Figma</strong>.
+          My professional journey has been diverse and enriching. I started full-time in the telecommunications field, where I honed my skills and gained valuable insights. However, my passion for creating exceptional user experiences led me to transition into the realm of UX/UI design. I immersed myself in various aspects of the discipline, including User Research, Information Architecture, Interaction Design, Visual Design, and tools like Figma.
         </p>
         <p className="text-subtitleXL 2xl:text-bodyXL">
-          As a <strong> UX/UI designer</strong>, I soon realized the importance
-          of effective collaboration with developers. Determined to bridge the
-          gap between design and development, I decided to enhance my skill set
-          by learning frontend development. This enabled me to comprehend the
-          intricacies of working directly with developers, fostering a stronger
-          symbiotic relationship between design and development teams.
+          Recognizing the importance of effective collaboration with developers, I decided to bridge the gap between design and development by learning frontend development. This decision enhanced my understanding of working directly with developers and fostered a stronger symbiotic relationship between design and development teams. My relentless pursuit of growth led me to join the "IT Generation" program at IT School GoIT, where I completed an intensive course in Frontend Development, mastering skills such as HTML5/CSS3, JavaScript, React, and Next.js.
         </p>
         <p className="text-subtitleXL 2xl:text-bodyXL">
-          Driven by a relentless pursuit of growth, I pursued an opportunity to
-          join the government program &quot;IT Generation&quot; and embarked on
-          an intensive 7-month course in <strong>Frontend Development</strong>.
-          This experience not only solidified my understanding but also provided
-          me with the practical skills necessary, like <strong>React</strong>,
-          to excel in the field.
+          After successful years as a freelancer, delivering over 35 projects, I sought a collaborative work environment where I could contribute to a team and further challenge myself. This pursuit led me to Heimdal Data ApS, where I worked as a UX/UI Designer & Frontend Developer. In this role, I applied my comprehensive skill set, developed user-friendly interfaces, conducted user research, and wrote scalable code to enhance website performance.
         </p>
         <p className="text-subtitleXL 2xl:text-bodyXL">
-          Following a successful year as a freelancer, I yearned to immerse
-          myself in a collaborative work environment, where I could contribute
-          to a team and further challenge myself. It was during this period of
-          intense study in frontend development that I secured a position at
-          <strong> Heimdal Data ApS</strong>, where I currently serve as a
-          <strong> UX/UI Designer & Developer</strong>. This role has allowed me
-          to apply my comprehensive skill set, work closely with colleagues, and
-          contribute to the creation of exceptional digital experiences.
+          My journey continued at DF Druckluft-Fachhandel GmbH, where I served as Head of Systems & IT. I led the tech side of a multimillion e-commerce company, managed teams and external partners, implemented agile methodologies, and optimized UX and system processes to increase revenue by 10%.
         </p>
         <p className="pb-6 xs:pb-12 text-subtitleXL 2xl:text-bodyXL">
-          As I continue to embark on exciting adventures across Europe, I am
-          actively seeking new opportunities that will further push the
-          boundaries of my expertise. I am eager to contribute my skills and
-          passion as a <strong>Product Designer</strong> to organizations that
-          value innovation, teamwork, and the pursuit of excellence.
+          Currently, as a Product Designer, I stay at the forefront of creative design trends and emerging technologies, delivering high-performance digital solutions that drive business growth. As I continue my adventures across Europe, I am actively seeking new opportunities to push the boundaries of my expertise. I am eager to contribute my skills and passion as a Product Designer to organizations that value innovation, teamwork, and the pursuit of excellence.
         </p>
       </div>
     </div>
