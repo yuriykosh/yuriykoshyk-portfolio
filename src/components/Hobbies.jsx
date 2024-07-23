@@ -11,53 +11,46 @@ const Hobbies = () => {
         className="object-cover max-w-full max-h-72 rounded-4xl xl:rounded-[60px]"
       />
 
-      <h2 className="text-white lg:ml-8">My Hobbies</h2>
+      <h2 className="text-white lg:ml-8">My Philosophy</h2>
       <div className="flex flex-col gap-6 lg:w-[90%] lg:ml-8 ">
         <p className="pb-6 text-subtitleXL 2xl:text-bodyXL">
-          Here, you&apos;ll get a glimpse into the things that ignite my passion
-          and drive. I believe that hobbies play a significant role in shaping
-          who we are and how we perceive the world. Let me share with you a few
-          of my cherished pastimes.
+          Design is not just about creating visually appealing interfaces; it&#39;s about solving problems and enhancing the human experience. My philosophy centers around a few core principles that guide my work as a Product Designer:
         </p>
 
         <div className="flex flex-col gap-4">
-          <h3>Basketball</h3>
+          <h3>User-Centric Approach</h3>
           <p className="text-subtitleXL 2xl:text-bodyXL">
-            Basketball isn&apos;t just a sport for me; it&apos;s a way of life.
-            The sound of sneakers on the court, the thrill of sinking the
-            perfect shot, and the bond with my teammates make basketball an
-            incredible experience. Through this game, I&apos;ve learned about
-            teamwork, discipline, and never giving up.
+            I believe that the best designs emerge from a deep understanding of the users&#39; needs, behaviors, and motivations. Every project starts with thorough research and empathy, ensuring that the end product is not only functional but also intuitive and enjoyable to use.
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          <h3>Movies</h3>
+          <h3>Continuous Learning and Innovation</h3>
           <p className="text-subtitleXL 2xl:text-bodyXL">
-            I&apos;m a big fan of movies. They have the power to transport us to
-            different worlds and make us feel a range of emotions. Whether
-            it&apos;s a drama, comedy, or action film, I love immersing myself
-            in diverse stories and exploring the art of filmmaking.
+            The digital landscape is constantly evolving, and staying at the forefront requires a commitment to continuous learning. I am passionate about exploring new technologies, design trends, and methodologies to bring fresh, innovative solutions to the table.
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          <h3>Film Photography</h3>
+          <h3>Collaboration and Communication</h3>
           <p className="text-subtitleXL 2xl:text-bodyXL">
-            In this digital age, film photography holds a special place in my
-            heart. There&apos;s something unique and nostalgic about capturing
-            moments on film. It requires patience, attention to detail, and a
-            creative eye. Developing the film and seeing the final images is a
-            rewarding experience.
+            Great design is a team effort. I value open communication and collaboration with cross-functional teams, from stakeholders to developers. Building strong relationships and working together ensures that the final product aligns with business goals and user needs.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h3>Attention to Detail</h3>
+          <p className="text-subtitleXL 2xl:text-bodyXL">
+            Details matter. Whether it&#39;s the placement of a button, the choice of a color palette, or the wording of a microcopy, every element contributes to the overall user experience. I am meticulous in my work, ensuring that every aspect of the design is thoughtfully considered and executed.
           </p>
         </div>
         <div className="flex flex-col gap-4 pb-6 xs:pb-12">
-          <h3>Traveling</h3>
+          <h3>Ethical and Inclusive Design</h3>
           <p className="text-subtitleXL 2xl:text-bodyXL">
-            Exploring the world is one of my greatest passions. I love
-            experiencing new cultures, embracing different landscapes, and
-            learning from diverse people. Traveling broadens my perspective and
-            helps me appreciate the beauty of our planet.
+            Design has the power to influence and shape society. I am committed to creating inclusive and accessible experiences that cater to diverse audiences. Ethical considerations are at the forefront of my design process, ensuring that the solutions I create are responsible and beneficial for all users.
           </p>
         </div>
+        
+        <p className="pb-6 text-subtitleXL 2xl:text-bodyXL">
+          By adhering to these principles, I strive to create digital experiences that not only meet business objectives but also resonate deeply with users, making their interactions more meaningful and impactful.
+        </p>
       </div>
     </div>
   );
