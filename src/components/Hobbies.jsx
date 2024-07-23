@@ -48,7 +48,7 @@ const Hobbies = () => {
           </p>
         </div>
         
-        <p className="pb-6 text-subtitleXL 2xl:text-bodyXL">
+        <p className="pb-6 text-subtitleXL xs:pb-12 2xl:text-bodyXL">
           By adhering to these principles, I strive to create digital experiences that not only meet business objectives but also resonate deeply with users, making their interactions more meaningful and impactful.
         </p>
       </div>
