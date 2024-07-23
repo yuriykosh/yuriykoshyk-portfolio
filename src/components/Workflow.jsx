@@ -11,31 +11,52 @@ const Workflow = () => {
         className="object-cover max-w-full max-h-72 rounded-4xl xl:rounded-[60px]"
       />
 
-      <h2 className="text-white lg:ml-8">My Workflow</h2>
-      <div className="flex flex-col gap-6 lg:w-[90%] lg:ml-8">
-        <p className="text-subtitleXL 2xl:text-bodyXL">
-          As a product designer, I have a deep understanding of user-centered
-          design principles and have worked on a wide range of projects, from
-          web and mobile applications to e-commerce platforms and marketing
-          websites.
-        </p>
-        <p className="text-subtitleXL 2xl:text-bodyXL">
-          I&apos;m proficient in user research, wireframing, prototyping, and
-          creating high-fidelity designs using tools like Sketch, Figma, and
-          Adobe Creative Suite. In addition to my design skills, I&apos;m also a
-          skilled frontend developer with expertise in HTML, CSS, JavaScript,
-          and frontend frameworks/libraries such as React and Next.js. I&apos;m
-          experienced in building responsive, cross-browser compatible, and
-          accessible web applications that adhere to modern web standards and
-          best practices.
-        </p>
-        <p className="pb-6 xs:pb-12 text-subtitleXL 2xl:text-bodyXL">
-          My strong communication and collaboration skills make me an effective
-          team player who can work seamlessly with designers, developers, and
-          other stakeholders to ensure the success of a project. I&apos;m always
-          seeking new challenges and opportunities to grow my skills and make a
-          positive impact through design and technology.
-        </p>
+      <h2 className="text-white lg:ml-8">How I Work</h2>
+      
+      <div className="flex flex-col gap-6 lg:w-[90%] lg:ml-8 ">
+        <div className="flex flex-col gap-4">
+          <h3>Research</h3>
+          <p className="text-subtitleXL 2xl:text-bodyXL">
+            Understanding more about the problem space, considering potential solutions, and learning about the customer.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h3>Principles</h3>
+          <p className="text-subtitleXL 2xl:text-bodyXL">
+            Crafting design principles to help guide project and experience decisions, and ensure alignment amongst the team.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h3>User Journey</h3>
+          <p className="text-subtitleXL 2xl:text-bodyXL">
+            Diving deep into the user journey and exploring user stories, personas, channels, and user decision-making.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h3>Design Exploration</h3>
+          <p className="text-subtitleXL 2xl:text-bodyXL">
+            Diverging wide and exploring a range of possible solutions. Testing, iterating, discussing, and working through the problem.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h3>Design Refinement</h3>
+          <p className="text-subtitleXL 2xl:text-bodyXL">
+            Refining a chosen direction and polishing the visual design, preparing designs for engineering handoff, and documenting decisions made.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h3>Handoff</h3>
+          <p className="text-subtitleXL 2xl:text-bodyXL">
+            Working closely with engineering and product to ensure a successful handoff and implementation process.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 pb-6 xs:pb-12">
+          <h3>Monitoring</h3>
+          <p className="text-subtitleXL 2xl:text-bodyXL">
+            Just because a project is live doesn't mean the work is done. We monitor its performance to discover ideas for improvement.
+          </p>
+        </div>
+        
       </div>
     </div>
   );
