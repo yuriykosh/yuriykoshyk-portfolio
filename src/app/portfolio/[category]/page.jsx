@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 
+import CanvasAnimation from "@/components/CanvasAnimation";
 import BgPicture from "@/utils/BgPicture";
 import { IconCategoryDesign, IconCategoryDev } from "@/utils/Icons";
 import PortfolioList from "@/components/PortfolioList";
@@ -44,6 +45,7 @@ const Category = () => {
 
   return (
     <div className="flex flex-col justify-between h-full">
+      <CanvasAnimation blur={"yes"} />
       {pathname === "/portfolio/design" ? (
         // * -------------- DESIGN PAGE -------------- *
 
@@ -185,7 +187,7 @@ const Category = () => {
       xs:w-[630px] xs:h-[1034px] xs:-top-[76px] xs:-left-[325px]
       sm:w-[1106px] sm:h-[1034px] sm:-top-[76px] sm:-left-[572px]
       md:w-[1335px] md:h-[1341px] md:-top-[99px] md:-left-[690px]
-      lg:w-[1573px] lg:h-[1571px] lg:-top-[274px] lg:-left-[461px]
+      lg:w-[1573px] lg:h-[1571px] lg:-top-[274px] lg:-left-[461px] lg:hidden
       xl:w-[1671px] xl:h-[1327px] xl:-top-[147px] xl:-left-[426px]
       2xl:w-[1983px] 2xl:h-[1793px] 2xl:-top-[293px] 2xl:-left-[498px]
         `,
